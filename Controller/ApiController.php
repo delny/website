@@ -15,9 +15,13 @@
       $this->calculManager = new CalculManager();
     }
   
+    /**
+     * Api - Retourne un réponse json pour la page de Script
+     */
     public function api(){
       $request = $_POST;
       $data = $this->calculManager->calcul($request);
       echo json_encode($data);
     }
   }
+  
