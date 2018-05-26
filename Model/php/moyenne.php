@@ -1,1 +1,0 @@
-<?php session_start();// on verif si variables existentif (isset($_POST['nombre'])){	$nombre=$_POST['nombre'];	$nombres = (explode("/", $nombre));	$l=count($nombres);	//calcul	if ($l==0)	{		$reponse='Il faut au moins un nombre !';	}	else	{		$i=0;		$somme=0;		while ($i<$l)		{			$somme+=$nombres[$i];			$i++;		}		$reponse=$somme/$l;	}	echo $reponse;}

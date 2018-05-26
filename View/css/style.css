@@ -190,8 +190,7 @@ input[type="submit"]:hover {
     border: 1px solid #00A;
 }
 
-.resultat {
-    background-color: #F0F0F0;
+#resultat, #erreur {
     width: 300px;
     max-height: 200px;
     overflow: auto;

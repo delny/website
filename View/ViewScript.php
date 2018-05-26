@@ -17,11 +17,12 @@
     <a href="#somme_1_n">Moyenne de nombres</a><br/>
     <a href="#suite">Afficher les permiers termes d'une suite d&eacute;fini par r&eacute;currence</a><br/>
     <a href="#fibonacci">Suite de Fibonacci</a></p>
-  <div class="resultat"></div>
+  <div id="resultat" class="alert alert-primary" role="alert" style="display: none;"></div>
+  <div id="erreur" class="alert alert-danger" role="alert" style="display: none;"></div>
   <section id="decomp_premier">
     <h2>Déterminer la décomposition d'un nombre entier en facteurs de nombres premiers</h2>
     <h3>Entrez un entier n strictement positif<br>remarque : 1 n'est pas considéré comme premier</h3>
-    <form method="post" class="scriptform" action="Model/php/decomposepremier.php">
+    <form method="post" class="scriptform">
       <input type="hidden" name="scriptid" value="1" />
       <input name="nombre" type="number" min="1">
       <input type="submit" value="D&eacute;composer">
@@ -30,7 +31,7 @@
   <section id="list_premier">
     <h2>Trouver les nombres premiers autour d'un nombre</h2>
     <h3>Entrez un entier n strictement positif</h3>
-    <form method="post" class="scriptform" action="Model/php/listpremier.php">
+    <form method="post" class="scriptform">
       <input type="hidden" name="scriptid" value="2" />
       <input name="nombre" type="number" min="0">
       <input type="submit" value="Afficher"> <br/>
@@ -43,8 +44,8 @@
   <section id="equation">
     <h2>Résoudre une équation du second degré ax²+bx+c=0 dans R</h2>
     <h3>Choisir les trois nombre r&eacute;els a, b et c</h3>
-    <form method="post" class="scriptform" action="Model/php/polynome.php">
-      <input type="hidden" name="scriptid" value="1" />
+    <form method="post" class="scriptform">
+      <input type="hidden" name="scriptid" value="3" />
       <input name="nombre1" type="number">*x² +
       <input name="nombre2" type="number">*x +
       <input name="nombre3" type="number"> = 0
@@ -55,6 +56,7 @@
     <h2>Moyenne de nombres</h2>
     <h3>Entre plusieurs nombres en les séparant par "/"</h3>
     <form method="post" class="scriptform" action="Model/php/moyenne.php">
+      <input type="hidden" name="scriptid" value="4" />
       <input name="nombre" type="text">
       <input type="submit" value="Calculer">
     </form>
@@ -63,6 +65,7 @@
     <h2>Afficher les permiers termes d'une suite d&eacute;fini par r&eacute;currence</h2>
     <h3>Choisir le premier terme, le nombre de terme &agrave; afficher, puis d&eacute;finir la suite :</h3>
     <form method="post" class="scriptform" action="Model/php/suite.php">
+      <input type="hidden" name="scriptid" value="5" />
       U<sub>0</sub> : <input name="c" type="number"><br/>
       Nombre de termes &agrave; afficher: <input name="n" type="number"><br/>
       U<sub>n+1</sub> = <input name="a" type="number"> * U<sub>n</sub> + <input name="b" type="number">
@@ -73,6 +76,7 @@
     <h2>Suite de Fibonacci</h2>
     <h3>Choisir un nombre entier n</h3>
     <form method="post" class="scriptform" action="Model/php/fibonacci.php">
+      <input type="hidden" name="scriptid" value="6" />
       <input name="nombre" type="number" min="1">
       <input type="submit" value="Calculer">
     </form>

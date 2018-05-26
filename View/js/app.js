@@ -72,13 +72,23 @@ function getanswers() {
 
 $(".scriptform").on("submit", function () {
   event.preventDefault();
+  $("#resultat").hide();
+  $("#erreur").hide();
   $.ajax({
-    // url: $(this).attr("action")
+    // url: $(this).attr("action"),
+    dataType: "json",
+    url: 'index.php?action=api',
     type: 'POST',
     data: $(this).serialize(),
-    success: function (html) {
-      if (html) {
-        $(".resultat").html(html);
+    success: function (response) {
+      if (response && response.reponse) {
+        $("#resultat").html(response.reponse);
+        $("#resultat").show();
+        $("body").scrollTop(440);
+      }
+      if (response && response.erreur) {
+        $("#erreur").html(response.erreur);
+        $("#erreur").show();
         $("body").scrollTop(440);
       }
     }
