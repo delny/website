@@ -40,7 +40,6 @@
       </div>
       <button type="submit" class="btn btn-primary">Envoyer votre message</button>
     </form>
-    </form>
     <?php else : ?>
     <form class="contact" method="post" action="index.php?action=contact">
       <div class="form-group">
