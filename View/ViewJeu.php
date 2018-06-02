@@ -1,5 +1,5 @@
 <?php
-  $titre='Anthony Delgado : jeu en php';
+  $titre = WEBSITE_TITLE.' - jeu en php';
 ?>
 
 <?php ob_start(); ?>

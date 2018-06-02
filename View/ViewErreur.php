@@ -1,5 +1,5 @@
 <?php
-  $titre = 'Page d\'erreur';
+  $titre = WEBSITE_TITLE.' - Page d\'erreur';
 ?>
 
 
