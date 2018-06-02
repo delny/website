@@ -12,31 +12,64 @@
     echo '<div class="alert alert-danger">' . $erreur . '</div>';
   }
   
-  if ($formulaire) {
-    ?>
+  if ($formulaire) : ?>
     <form class="contact" method="post" action="index.php?action=contact">
-      <input type="text" required name="nom" id="nom" value="<?php echo $_POST['nom'] ?>" placeholder="Votre nom"/>
-      <input type="email" required name="courriel" id="courriel" value="<?php echo $_POST['courriel'] ?>"
-             placeholder="Votre e-mail"/>
-      <input type="text" required name="sujet" id="sujet" value="<?php echo $_POST['sujet'] ?>"
-             placeholder="Le sujet de votre mesage"/>
-      <textarea name="message" id="message"
-                placeholder="Ecrivez votre message ici"><?php echo $_POST['message'] ?></textarea>
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" required class="form-control" name="nom" id="nom" value="<?php echo $form->getNom(); ?>">
+      </div>
+      <div class="form-group">
+        <label for="courriel">Courriel</label>
+        <input type="email" required class="form-control" name="courriel" id="courriel" value="<?php echo $form->getCourriel(); ?>">
+      </div>
+      <div class="form-group">
+        <label for="sujet">Sujet</label>
+        <input type="text" required class="form-control" name="sujet" id="sujet" value="<?php echo $form->getSujet(); ?>">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" name="message" id="message" rows="3"><?php echo $form->getMessage(); ?></textarea>
+      </div>
       <div class="g-recaptcha" data-sitekey="6Ldn8QcTAAAAAJovh4gNcTkmdNoLjX1hI_xEMtXA"></div>
-      <input type="submit" value="Envoyer votre message"/>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" required name="accept" id="accept" class="form-check-input">
+          J'accepte que mes données soit transmises<br />
+          et que mon courriel/e-mail soit utilisé pour &ecirc;tre recontact&eacute;
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer votre message</button>
     </form>
-    <?php
-  } else {
-    ?>
+    </form>
+    <?php else : ?>
     <form class="contact" method="post" action="index.php?action=contact">
-      <input type="text" required name="nom" placeholder="Votre nom"/>
-      <input type="email" required name="courriel" placeholder="Votre e-mail"/>
-      <input type="text" required name="sujet" placeholder="Le sujet de votre mesage"/>
-      <textarea name="message" placeholder="Ecrivez votre message ici"></textarea>
+      <div class="form-group">
+        <label for="nom">Nom</label>
+        <input type="text" required class="form-control" name="nom" id="nom" placeholder="Votre nom">
+      </div>
+      <div class="form-group">
+        <label for="courriel">Courriel</label>
+        <input type="email" required class="form-control" name="courriel" id="courriel" placeholder="Votre e-mail">
+      </div>
+      <div class="form-group">
+        <label for="sujet">Sujet</label>
+        <input type="text" required class="form-control" name="sujet" id="sujet" placeholder="Le sujet de votre mesage">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+      </div>
       <div class="g-recaptcha" data-sitekey="6Ldn8QcTAAAAAJovh4gNcTkmdNoLjX1hI_xEMtXA"></div>
-      <input type="submit" value="Envoyer votre message"/>
+      <div class="form-check">
+        <label class="form-check-label">
+          <input type="checkbox" required name="accept" id="accept" class="form-check-input">
+          J'accepte que mes données soit transmises<br />
+          et que mon courriel/e-mail soit utilisé pour &ecirc;tre recontact&eacute;
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer votre message</button>
     </form>
-  <?php } ?>
+  <?php endif; ?>
 
 <?php $contenu = ob_get_clean(); ?>
 

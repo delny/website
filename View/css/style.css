@@ -294,7 +294,6 @@ div.bhoechie-tab-menu div.list-group > a:last-child {
 
 div.bhoechie-tab-menu div.list-group > a.active, div.bhoechie-tab-menu div.list-group > a.active .glyphicon, div.bhoechie-tab-menu div.list-group > a.active .fa {
     background-color: #171dd3;
-    background-image: #171dd3;
     color: #ffffff;
 }
 

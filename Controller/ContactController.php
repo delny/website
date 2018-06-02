@@ -31,6 +31,7 @@
       //on definit la vue et on retourne le resulat
       $this->renderView('contact', [
         'formulaire' => $formulaire,
+        'form' => $form,
         'erreur' => (isset($erreur)) ? $erreur : null,
       ]);
     }
