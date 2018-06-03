@@ -1,16 +1,13 @@
 body {
     font-family: 'Ubuntu', sans-serif; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
-    background: #efefef; /* Old browsers */
-    //background-image: url("../img/fond.jpg");
+    background: #efefef;
     color: black;
     width: 100%;
     margin: 0px;
 }
 
 header {
-    //background-color: #FFF;
     border-bottom:1px solid #073a0a;
-
 }
 
 .menu {
@@ -47,7 +44,6 @@ header {
 }
 
 .corps {
-    //border: 2px solid #F0F0F0;
     box-shadow: 4px 4px 5px #CCC;
     background: #fff;
     color: #474747;
@@ -94,7 +90,6 @@ h1 {
 h2 {
     width: auto;
     color: #0d5b12;
-    //background-color: #88ea8e;
     font-size: x-large;
     text-align: center;
 }
