@@ -1,5 +1,5 @@
 <?php
-  $titre = 'Anthony Delgado : sytèmes et réseaux informatiques';
+  $titre = WEBSITE_TITLE.' - Accueil';
 ?>
 
 <?php ob_start(); ?>

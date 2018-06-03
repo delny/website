@@ -1,5 +1,5 @@
 <?php
-  $titre = 'Anthony Delgado : Mentions l&eacute;gales';
+  $titre = WEBSITE_TITLE.' - Mentions l&eacute;gales';
 ?>
 
 <?php ob_start(); ?>

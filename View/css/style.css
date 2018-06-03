@@ -1,17 +1,13 @@
 body {
     font-family: 'Ubuntu', sans-serif; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
-    background: #EEE; /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#eeeeee', GradientType=0); /* IE6-9 */
+    background: #efefef;
     color: black;
     width: 100%;
     margin: 0px;
 }
 
 header {
-    background-color: #006FE6;
+    border-bottom:1px solid #073a0a;
 }
 
 .menu {
@@ -26,36 +22,42 @@ header {
 }
 
 .menu > ul > li > a {
-    color: #FFF;
+    color:#0d5b12;
     text-decoration: none;
     transition: all 1.5s ease;
 }
 
 .menu a:hover {
-    color: #3277B3;
-    background-color: #FFF;
+    color: #fff;
+    background-color: #0d5b12;
     text-decoration: none;
     transition: all 1.5s ease;
 }
+.menu li.show a.nav-link.dropdown-toggle{
+    color: #fff;
+    background-color: #0d5b12;
+}
 
 .corps a {
-    color: #474747;
+    color: #0d5b12;
     text-decoration: underline;
 }
 
-.corps a:hover {
-    color: black;
-}
-
 .corps {
-    border: 2px solid #F0F0F0;
     box-shadow: 4px 4px 5px #CCC;
-    background: #FFF;
+    background: #fff;
     color: #474747;
-    padding-top: 70px;
+    padding: 70px 10px 30px 10px;
 }
-
+footer{
+    margin-top: 24px;
+    border-top:1px solid #073a0a;
+}
 #bottom-footer {
+    font-size: 14px;
+}
+#bottom-footer a{
+    color:#474747;
     font-size: 14px;
 }
 
@@ -79,23 +81,21 @@ table {
 }
 
 h1 {
-    color: #06358D;
+    color: #0d5b12;
     font-size: xx-large;
     text-align: center;
-    border-bottom: 3px groove #06358D;
+    border-bottom: 1px solid #0d5b12;
 }
 
 h2 {
     width: auto;
-    color: #06358D;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 12px;
+    color: #0d5b12;
     font-size: x-large;
     text-align: center;
 }
 
 h2.parcours_titres {
-    border: 1px solid #474747;
+    border-bottom: 1px solid #88ea8e;
 }
 
 .gras {
@@ -160,7 +160,7 @@ input[type="submit"] {
     padding: 4px;
     margin: 6px;
     color: white;
-    background-color: #5C7FBF;
+    background-color: #0062cc;
     border: 1px white solid;
     border-radius: 8px;
 }
@@ -168,7 +168,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     color: white;
     border: 1px white solid;
-    background-color: #072A6A;
+    background-color: #0069d9;
 }
 
 .startgame, .stopgame {
@@ -243,7 +243,7 @@ label {
 }
 
 .experience-item:hover {
-    background-color: rgba(225, 225, 225, 0.6);
+    background-color: rgba(180, 200, 180, 0.3);
 }
 
 /*bhoechie tabhttps://bootsnipp.com/snippets/featured/simple-vertical-tab*/
@@ -322,14 +322,14 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active) {
 /* responsive design taille moyenne*/
 @media screen and (min-width: 769px) and (max-width: 1200px) {
     .corps {
-        padding-top: 80px;
+        padding-top: 30px;
     }
 }
 
 /* responsive design petite taille */
 @media screen and (max-width: 768px) {
     .corps {
-        padding-top: 120px;
+        padding-top: 30px;
     }
 
     h1 {
