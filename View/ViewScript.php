@@ -25,7 +25,7 @@
     <form method="post" class="scriptform">
       <input type="hidden" name="scriptid" value="1" />
       <input name="nombre" type="number" min="1">
-      <input type="submit" value="D&eacute;composer">
+      <button type="submit" class="btn btn-primary">Décomposer</button>
     </form>
   </section>
   <section id="list_premier">
@@ -33,12 +33,12 @@
     <h3>Entrez un entier n strictement positif</h3>
     <form method="post" class="scriptform">
       <input type="hidden" name="scriptid" value="2" />
-      <input name="nombre" type="number" min="0">
-      <input type="submit" value="Afficher"> <br/>
+      <input name="nombre" type="number" min="0"><br />
       Afficher <input type="number" name="combien" min="1" max="100" value="10"/> nombres premiers : <br/>
       <input type="radio" checked name="position" value="au"/> Autour de ce nombre<br/>
       <input type="radio" name="position" value="ap"/> Apr&egrave;s ce nombre<br/>
       <input type="radio" name="position" value="av"/> Avant ce nombre
+      <button type="submit" class="btn btn-primary">Afficher</button>
     </form>
   </section>
   <section id="equation">
@@ -49,7 +49,7 @@
       <input name="nombre1" type="number">*x² +
       <input name="nombre2" type="number">*x +
       <input name="nombre3" type="number"> = 0
-      <input type="submit" value="R&eacute;soudre">
+      <button type="submit" class="btn btn-primary">R&eacute;soudre</button>
     </form>
   </section>
   <section id="somme_1_n">
@@ -58,7 +58,7 @@
     <form method="post" class="scriptform" action="Model/php/moyenne.php">
       <input type="hidden" name="scriptid" value="4" />
       <input name="nombre" type="text">
-      <input type="submit" value="Calculer">
+      <button type="submit" class="btn btn-primary">Calculer</button>
     </form>
   </section>
   <section id="suite">
@@ -69,7 +69,7 @@
       U<sub>0</sub> : <input name="c" type="number"><br/>
       Nombre de termes &agrave; afficher: <input name="n" type="number"><br/>
       U<sub>n+1</sub> = <input name="a" type="number"> * U<sub>n</sub> + <input name="b" type="number">
-      <input type="submit" value="Calculer">
+      <button type="submit" class="btn btn-primary">Calculer</button>
     </form>
   </section>
   <section id="fibonacci">
@@ -78,7 +78,7 @@
     <form method="post" class="scriptform" action="Model/php/fibonacci.php">
       <input type="hidden" name="scriptid" value="6" />
       <input name="nombre" type="number" min="1">
-      <input type="submit" value="Calculer">
+      <button type="submit" class="btn btn-primary">Calculer</button>
     </form>
   </section>
   <section>
