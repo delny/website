@@ -6,10 +6,10 @@
   <h1 id="script_top">Un peu de PHP</h1>
   <h3>Accès direct :</h3>
   <h3>Programmation</h3>
-  <p><a href="index.php?action=scriptgenformcontact">G&eacute;n&eacute;rer un formulaire de contact en HTML/PHP</a></p>
+  <p><a href="page-scriptgenformcontact.html">G&eacute;n&eacute;rer un formulaire de contact en HTML/PHP</a></p>
   <h3>Mini-jeux en PHP</h3>
-  <p><a href="index.php?action=game">Deviner un nombre entre 0 et 100</a><br/>
-    <a href="index.php?action=game">Calcul rapide</a></p>
+  <p><a href="page-game.html">Deviner un nombre entre 0 et 100</a><br/>
+    <a href="page-game.html">Calcul rapide</a></p>
   <h3>Math&eacute;matiques</h3>
   <p><a href="#decomp_premier">Déterminer la décomposition d'un nombre entier en facteurs de nombres premiers</a><br/>
     <a href="#list_premier">Trouver les nombres premiers autour d'un nombre</a><br/>

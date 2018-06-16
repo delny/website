@@ -13,7 +13,7 @@
   }
   
   if ($formulaire) : ?>
-    <form class="contact" method="post" action="index.php?action=contact">
+    <form class="contact" method="post" action="page-contact.html">
       <div class="form-group">
         <label for="nom">Nom</label>
         <input type="text" required class="form-control" name="nom" id="nom" value="<?php echo $form->getNom(); ?>">
@@ -41,7 +41,7 @@
       <button type="submit" class="btn btn-primary">Envoyer votre message</button>
     </form>
     <?php else : ?>
-    <form class="contact" method="post" action="index.php?action=contact">
+    <form class="contact" method="post" action="page-contact.html">
       <div class="form-group">
         <label for="nom">Nom</label>
         <input type="text" required class="form-control" name="nom" id="nom" placeholder="Votre nom">

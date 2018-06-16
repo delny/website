@@ -22,7 +22,7 @@
         } elseif ($retour = $formManager->sendForm($form)) {
           $_SESSION['reponse_contact'] = $retour;
           //redirection vers contact
-          header('Location: index.php?action=contact');
+          header('Location: page-contact.html');
           exit;
         } else {
           $erreur = 'Votre message n\' a pas été envoyé, veuillez recommencer';
