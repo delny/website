@@ -30,7 +30,7 @@
         <label for="message">Message</label>
         <textarea class="form-control" name="message" id="message" rows="3"><?php echo $form->getMessage(); ?></textarea>
       </div>
-      <div class="g-recaptcha" data-sitekey="6Ldn8QcTAAAAAJovh4gNcTkmdNoLjX1hI_xEMtXA"></div>
+      <div class="g-recaptcha" data-sitekey="6LegOF8UAAAAAFreeB8B4V7FviOfkS1z5Kt8EZwZ"></div>
       <div class="form-check">
         <label class="form-check-label">
           <input type="checkbox" required name="accept" id="accept" class="form-check-input">
@@ -58,7 +58,7 @@
         <label for="message">Message</label>
         <textarea class="form-control" name="message" id="message" rows="3"></textarea>
       </div>
-      <div class="g-recaptcha" data-sitekey="6Ldn8QcTAAAAAJovh4gNcTkmdNoLjX1hI_xEMtXA"></div>
+      <div class="g-recaptcha" data-sitekey="6LegOF8UAAAAAFreeB8B4V7FviOfkS1z5Kt8EZwZ"></div>
       <div class="form-check">
         <label class="form-check-label">
           <input type="checkbox" required name="accept" id="accept" class="form-check-input">
