@@ -13,7 +13,7 @@
   }
   
   if ($formulaire) : ?>
-    <form class="contact" method="post" action="index.php?action=contact">
+    <form class="contact" method="post" action="page-contact.html">
       <div class="form-group">
         <label for="nom">Nom</label>
         <input type="text" required class="form-control" name="nom" id="nom" value="<?php echo $form->getNom(); ?>">
@@ -30,7 +30,7 @@
         <label for="message">Message</label>
         <textarea class="form-control" name="message" id="message" rows="3"><?php echo $form->getMessage(); ?></textarea>
       </div>
-      <div class="g-recaptcha" data-sitekey="6Ldn8QcTAAAAAJovh4gNcTkmdNoLjX1hI_xEMtXA"></div>
+      <div class="g-recaptcha" data-sitekey="6LegOF8UAAAAAFreeB8B4V7FviOfkS1z5Kt8EZwZ"></div>
       <div class="form-check">
         <label class="form-check-label">
           <input type="checkbox" required name="accept" id="accept" class="form-check-input">
@@ -41,7 +41,7 @@
       <button type="submit" class="btn btn-primary">Envoyer votre message</button>
     </form>
     <?php else : ?>
-    <form class="contact" method="post" action="index.php?action=contact">
+    <form class="contact" method="post" action="page-contact.html">
       <div class="form-group">
         <label for="nom">Nom</label>
         <input type="text" required class="form-control" name="nom" id="nom" placeholder="Votre nom">
@@ -58,7 +58,7 @@
         <label for="message">Message</label>
         <textarea class="form-control" name="message" id="message" rows="3"></textarea>
       </div>
-      <div class="g-recaptcha" data-sitekey="6Ldn8QcTAAAAAJovh4gNcTkmdNoLjX1hI_xEMtXA"></div>
+      <div class="g-recaptcha" data-sitekey="6LegOF8UAAAAAFreeB8B4V7FviOfkS1z5Kt8EZwZ"></div>
       <div class="form-check">
         <label class="form-check-label">
           <input type="checkbox" required name="accept" id="accept" class="form-check-input">

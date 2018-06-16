@@ -10,7 +10,6 @@
   <meta name="robots" content="noindex"/>
   <link rel="shortcut icon" type="image/x-icon" href="View/img/favicon.ico"/>
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <!-- Bootstrap css cdn -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
@@ -45,7 +44,7 @@
           "message": "Ce site utilise des cookies pour vous proposer la meilleure expérience.",
           "dismiss": "J'accepte",
           "link": "En savoir plus",
-          "href": "http://www.anthonydelgado.fr/index.php?action=credits"
+          "href": "http://www.anthonydelgado.fr/page-credits.html"
         }
       })
     });

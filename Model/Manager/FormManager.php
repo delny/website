@@ -133,7 +133,7 @@
      */
     private function verifAccept($accept)
     {
-      if (empty($message)) {
+      if (empty($accept)) {
         throw new \Exception("Il faut accepter les conditions d'utilisation du formulaire");
       }
     }
@@ -145,7 +145,7 @@
     {
       /*google ReCaptcha*/
       $captcha = 0;
-      $key = '6Ldn8QcTAAAAAPRNyk8xsWvq7lOov3iuo1Rszv4U';
+      $key = API_RECAPTCHA;
       $response = $_POST['g-recaptcha-response'];
       $ip = $_SERVER['REMOTE_ADDR'];
       $gapi = 'https://www.google.com/recaptcha/api/siteverify?secret=' . $key . '&response=' . $response . '&remoteip=' . $ip . '';

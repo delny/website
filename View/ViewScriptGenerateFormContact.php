@@ -16,7 +16,7 @@
         echo '<textarea id="reponseform" onclick="this.select();">'.$resultat.'</textarea>';
       }
     ?></div>
-  <form  class="genformcontact" method="post" action="index.php?action=scriptgenerateformcontact">
+  <form  class="genformcontact" method="post" action="page-scriptgenerateformcontact.html">
     <label for="courriel_form">Courriel de reception du formulaire: </label><p><input type="text" name="courriel_form" id="courriel_form" <?php if (isset($_POST['courriel_form'])){echo 'value="'.$_POST['courriel_form'].'"';}?>/></p>
     <p>Cochez la case pour signaler que le champ est obligatoire</p>
     <div id="listchmp">

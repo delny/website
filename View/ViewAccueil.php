@@ -14,7 +14,7 @@
   <p style="color:#FF1212;">Pour une navigation optimale sur ce site, je vous invite à mettre à jour votre navigateur
     Internet Explorer.</p>
   <![endif]-->
-  <a href="index.php?action=parcours">Voir mon parcours</a>
+  <a href="page-parcours.html">Voir mon parcours</a>
   <ul id="mylistupdate" style="display: none;">
     <li>Mars 2017 : Mise à jour design, parcours et refonte du site en mod&egrave;le <a
               href="https://fr.wikipedia.org/wiki/Mod%C3%A8le-vue-contr%C3%B4leur" target="_blank">MVC</a></li>
