@@ -238,7 +238,7 @@
     {
       $nombre1 = !empty($request['nombre1']) ? $request['nombre1'] : 0;
       $nombre2 = !empty($request['nombre2']) ? $request['nombre2'] : 0;
-      $nombre3 = !empty($request['nombre2']) ? $request['nombre2'] : 0;
+      $nombre3 = !empty($request['nombre3']) ? $request['nombre3'] : 0;
       
       return $this->solveEquation($nombre1, $nombre2, $nombre3);
     }
@@ -265,7 +265,7 @@
         $x = (-$c) / ($b);
         $reponse = 'S = {' . $x . '}';
       } else {
-        $d = ($b * $b) - 4 * $a * $c;
+        $d = ($b * $b) - (4 * $a * $c);
         if ($d < 0) {
           $reponse = 'S = {&Oslash;}';
         } elseif ($d == 0) {

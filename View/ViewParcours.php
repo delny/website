@@ -25,8 +25,9 @@ $titre = WEBSITE_TITLE.' - Parcours';
         </ul>
         <h4>Environnement technique</h4>
         <ul>
-          <li>Drupal</li>
-          <li>PHP 5</li>
+          <li>Drupal 7/8</li>
+          <li>Symfony</li>
+          <li>PHP 5/7</li>
           <li>Atom/PhpStorm</li>
         </ul>
       </div>
