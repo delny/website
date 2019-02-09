@@ -6,17 +6,18 @@
   
   <h1 id="script_top">G&eacute;n&eacute;rer un formulaire de contact en HTML/PHP</h1>
   <div><?php
-      if (isset($erreur))
-      {
-        echo '<span class="error">'.$erreur.'</span>';
-      }
-      elseif (isset($resultat))
-      {
+      if (isset($erreur)) {
+          ?>
+          <div class="alert alert-danger">
+              <?php echo $erreur; ?>
+          </div>
+          <?php
+      } elseif (isset($resultat)) {
         echo '<p>code &agrave; placer dans votre page de contact</p>';
         echo '<textarea id="reponseform" onclick="this.select();">'.$resultat.'</textarea>';
       }
     ?></div>
-  <form  class="genformcontact" method="post" action="page-scriptgenerateformcontact.html">
+  <form  class="genformcontact" method="post" action="page-scriptgenformcontact.html">
     <label for="courriel_form">Courriel de reception du formulaire: </label><p><input type="text" name="courriel_form" id="courriel_form" <?php if (isset($_POST['courriel_form'])){echo 'value="'.$_POST['courriel_form'].'"';}?>/></p>
     <p>Cochez la case pour signaler que le champ est obligatoire</p>
     <div id="listchmp">

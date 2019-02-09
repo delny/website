@@ -243,6 +243,36 @@ label {
 .experience-item:hover {
     background-color: rgba(180, 200, 180, 0.3);
 }
+.accordeon:focus {
+    outline: none;
+}
+.accordeon {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5db157;
+    padding: 16px;
+    margin: 16px 0px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+.accordeon.active, .accordeon:hover {
+    background-color: #428017;
+}
+
+.accordeon-content {
+    padding: 0 12px;
+    height: 0;
+    transition: 0.8s;
+    overflow: hidden;
+}
+.accordeon.active + .accordeon-content {
+    height: 200px;
+}
 
 /* responsive design taille moyenne*/
 @media screen and (min-width: 769px) and (max-width: 1200px) {
