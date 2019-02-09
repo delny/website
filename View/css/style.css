@@ -1,17 +1,17 @@
 body {
-    font-family: 'Ubuntu', sans-serif; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
-    background: #efefef;
+    font-family: 'Lora', sans-serif; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
+    background: #fff;
     color: black;
     width: 100%;
     margin: 0px;
 }
 
 header {
-    border-bottom:1px solid #073a0a;
+    border-bottom:1px solid #f0f0f0;
 }
 
 .menu {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Lora', sans-serif;
     font-size: 24px;
 }
 
@@ -22,36 +22,35 @@ header {
 }
 
 .menu > ul > li > a {
-    color:#0d5b12;
+    color:#5db157;
     text-decoration: none;
     transition: all 1.5s ease;
 }
 
 .menu a:hover {
     color: #fff;
-    background-color: #0d5b12;
+    background-color: #5db157;
     text-decoration: none;
     transition: all 1.5s ease;
 }
 .menu li.show a.nav-link.dropdown-toggle{
     color: #fff;
-    background-color: #0d5b12;
+    background-color: #5db157;
 }
 
 .corps a {
-    color: #0d5b12;
+    color: #474747;
     text-decoration: underline;
 }
 
 .corps {
-    box-shadow: 4px 4px 5px #CCC;
     background: #fff;
     color: #474747;
     padding: 70px 10px 30px 10px;
 }
 footer{
     margin-top: 24px;
-    border-top:1px solid #073a0a;
+    border-top:1px solid #f0f0f0;
 }
 #bottom-footer {
     font-size: 14px;
@@ -81,21 +80,20 @@ table {
 }
 
 h1 {
-    color: #0d5b12;
+    color: #428017;
     font-size: xx-large;
-    text-align: center;
-    border-bottom: 1px solid #0d5b12;
+    text-align: left;
 }
 
 h2 {
     width: auto;
-    color: #0d5b12;
+    color: #428017;
     font-size: x-large;
     text-align: center;
 }
 
 h2.parcours_titres {
-    border-bottom: 1px solid #88ea8e;
+    border-bottom: 1px solid #428017;
 }
 
 .gras {

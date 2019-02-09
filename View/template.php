@@ -8,8 +8,8 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width"/>
   <meta name="robots" content="noindex"/>
-  <link rel="shortcut icon" type="image/x-icon" href="View/img/favicon.ico"/>
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="https://www.anthonydelgado.fr/View/img/favicon.ico"/>
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <!-- Bootstrap css cdn -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
