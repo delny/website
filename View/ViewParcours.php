@@ -4,13 +4,8 @@ $titre = WEBSITE_TITLE.' - Parcours';
 
 <?php ob_start(); ?>
 <h1 id="parcours_top">Pr&eacute;sentation de mon parcours<br />Développeur PHP Drupal / Symfony</h1>
-<h3>Accès direct :</h3>
-  <a href="#experiences">Exp&eacute;riences professionnelles</a><br />
-  <a href="#formation">Formation</a><br />
-  <a href="#competences">Compétences</a><br />
-  <a href="#loisirs">Loisirs</a><br />
   <a href="#" OnClick="javascript:window.print()">Imprimer le Curriculum Vitae</a><br />
-  <h2 class="parcours_titres" id="experiences">Exp&eacute;riences professionnelles</h2>
+  <h2 class="parcours_titres">Exp&eacute;riences professionnelles</h2>
   <div class="list-experiences">
     <div class="experience-item">
       <div class="exp-date">Depuis Dec 17</div>
@@ -177,7 +172,7 @@ $titre = WEBSITE_TITLE.' - Parcours';
       </div>
     </div>
   </div>
-  <h2 class="parcours_titres" id="formation">Formation</h2>
+  <h2 class="parcours_titres">Formation</h2>
   <div class="list-experiences">
     <div class="experience-item">
       <div class="exp-date">F&eacute;vrier 2017 - Avril 2017</div>
@@ -251,7 +246,7 @@ $titre = WEBSITE_TITLE.' - Parcours';
       </div>
     </div>
   </div>
-  <h2 class="parcours_titres" id="competences">Comp&eacute;tences</h2>
+  <h2 class="parcours_titres">Comp&eacute;tences</h2>
   <div class="list-experiences">
     <div class="experience-item">
       <div class="exp-body">
