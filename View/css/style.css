@@ -131,11 +131,9 @@ input[type="text"], input[type="email"], textarea {
 }
 
 input[type="number"] {
-    width: 50px;
-    padding: 2px;
+    width: 20%;
+    display: inline-block;
     outline: none;
-    border: 1px white solid;
-    background-color: #F0F0F0;
 }
 
 form.contact textarea {
@@ -148,11 +146,6 @@ form.contact textarea {
 
 input[type="submit"] {
     outline: none;
-    padding: 4px;
-    margin: 6px;
-    color: white;
-    background-color: #0062cc;
-    border: 1px white solid;
     border-radius: 8px;
 }
 

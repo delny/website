@@ -19,22 +19,6 @@
     </div>
   </div>
 </footer>
-
-
-
-<!--
-<footer>
-  <div id="bottom-footer">
-    <div class="container bottom-footer-container">
-      <div class="copyright">
-        
-      </div>
-      <div class="site-info">
-        <a href="page-credits.html">Mentions l&eacute;gales</a>
-      </div>
-    </div>
-  </div>
-</footer>-->
 <script src="View/js/vendor/jquery.js"></script>
 <script src="View/js/vendor/what-input.js"></script>
 <script src="View/js/vendor/foundation.js"></script>
