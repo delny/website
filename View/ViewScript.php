@@ -14,25 +14,23 @@
   <div id="resultat" class="alert alert-primary" role="alert" style="display: none;"></div>
   <div id="erreur" class="alert alert-danger" role="alert" style="display: none;"></div>
   
-  <div class="accordeon">
-      <span>Déterminer la décomposition d'un nombre entier en facteurs de nombres premiers.</span>
-      <span>+</span>
-  </div>
-  <div class="accordeon-content">
-    <h3>Entrez un entier n strictement positif<br>remarque : 1 n'est pas considéré comme premier</h3>
+  <ul class="accordion" data-accordion data-allow-all-closed="true">
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Déterminer la décomposition d'un nombre entier en facteurs de nombres premiers.</a>
+      <div class="accordion-content" data-tab-content>
+      <h3>Entrez un entier n strictement positif<br>remarque : 1 n'est pas considéré comme premier</h3>
       <form method="post" class="scriptform">
         <input type="hidden" name="scriptid" value="1" />
         <input name="nombre" type="number" min="1">
         <button type="submit" class="btn btn-primary">Décomposer</button>
       </form>
-  </div>
+      </div>
+    </li>
 
-  <div class="accordeon">
-      <span>Trouver les nombres premiers autour d'un nombre</span>
-      <span>+</span>
-  </div>
-  <div class="accordeon-content">
-    <h3>Entrez un entier n strictement positif</h3>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Trouver les nombres premiers autour d'un nombre</a>
+      <div class="accordion-content" data-tab-content>
+      <h3>Entrez un entier n strictement positif</h3>
       <form method="post" class="scriptform">
         <input type="hidden" name="scriptid" value="2" />
         <input name="nombre" type="number" min="0"><br />
@@ -42,14 +40,13 @@
         <input type="radio" name="position" value="av"/> Avant ce nombre
         <button type="submit" class="btn btn-primary">Afficher</button>
       </form>
-  </div>
+      </div>
+    </li>
 
-  <div class="accordeon">
-      <span>Résoudre une équation du second degré ax²+bx+c=0 dans R</span>
-      <span>+</span>
-  </div>
-  <div class="accordeon-content">
-    <h3>Choisir les trois nombre r&eacute;els a, b et c</h3>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Résoudre une équation du second degré ax²+bx+c=0 dans R</a>
+      <div class="accordion-content" data-tab-content>
+      <h3>Choisir les trois nombre r&eacute;els a, b et c</h3>
       <form method="post" class="scriptform">
         <input type="hidden" name="scriptid" value="3" />
         <input name="nombre1" type="number">*x² +
@@ -57,27 +54,25 @@
         <input name="nombre3" type="number"> = 0
         <button type="submit" class="btn btn-primary">R&eacute;soudre</button>
       </form>
-  </div>
+      </div>
+    </li>
 
-  <div class="accordeon">
-      <span>Moyenne de nombres</span>
-      <span>+</span>
-  </div>
-  <div class="accordeon-content">
-    <h3>Entre plusieurs nombres en les séparant par "/"</h3>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Moyenne de nombres</a>
+      <div class="accordion-content" data-tab-content>
+      <h3>Entre plusieurs nombres en les séparant par "/"</h3>
       <form method="post" class="scriptform" action="Model/php/moyenne.php">
         <input type="hidden" name="scriptid" value="4" />
         <input name="nombre" type="text">
         <button type="submit" class="btn btn-primary">Calculer</button>
       </form>
-  </div>
+      </div>
+    </li>
 
-  <div class="accordeon">
-      <span>Afficher les permiers termes d'une suite d&eacute;fini par r&eacute;currence</span>
-      <span>+</span>
-  </div>
-  <div class="accordeon-content">
-    <h3>Choisir le premier terme, le nombre de terme &agrave; afficher, puis d&eacute;finir la suite :</h3>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Afficher les permiers termes d'une suite d&eacute;fini par r&eacute;currence</a>
+      <div class="accordion-content" data-tab-content>
+      <h3>Choisir le premier terme, le nombre de terme &agrave; afficher, puis d&eacute;finir la suite :</h3>
       <form method="post" class="scriptform" action="Model/php/suite.php">
         <input type="hidden" name="scriptid" value="5" />
         U<sub>0</sub> : <input name="c" type="number"><br/>
@@ -85,20 +80,21 @@
         U<sub>n+1</sub> = <input name="a" type="number"> * U<sub>n</sub> + <input name="b" type="number">
         <button type="submit" class="btn btn-primary">Calculer</button>
       </form>
-  </div>
+      </div>
+    </li>
 
-  <div class="accordeon">
-      <span>Suite de Fibonacci</span>
-      <span>+</span>
-  </div>
-  <div class="accordeon-content">
-    <h3>Choisir un nombre entier n</h3>
+    <li class="accordion-item" data-accordion-item>
+      <a href="#" class="accordion-title">Suite de Fibonacci</a>
+      <div class="accordion-content" data-tab-content>
+      <h3>Choisir un nombre entier n</h3>
       <form method="post" class="scriptform" action="Model/php/fibonacci.php">
         <input type="hidden" name="scriptid" value="6" />
         <input name="nombre" type="number" min="1">
         <button type="submit" class="btn btn-primary">Calculer</button>
       </form>
-  </div>
+      </div>
+    </li>
+  </ul>
 
 <?php $contenu = ob_get_clean(); ?>
 

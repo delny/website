@@ -1,3 +1,5 @@
+$(document).foundation()
+
 $(".startgame").on("click", function () {
   if ($(".startgame").html() == "Arreter le jeu") {
     $.ajax({
@@ -128,19 +130,4 @@ function removechmp() {
     var lastchmp = document.getElementById('listchmp').lastElementChild;
     document.getElementById('listchmp').removeChild(lastchmp);
   }
-}
-
-// Accordeon
-var acc = $(".accordeon");
-var i;
-
-for (i=0;i<acc.length;i++) {
-  acc[i].addEventListener("click",function () {
-    if ($(this).hasClass('active')) {
-      $(".accordeon").removeClass('active');
-    } else {
-      $(".accordeon").removeClass('active');
-      $(this).addClass('active');
-    }
-  });
 }

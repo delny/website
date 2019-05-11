@@ -1,5 +1,4 @@
 body {
-    font-family: 'Lora', sans-serif; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eeeeee+0,eeeeee+100;Grey+Flat */
     background: #fff;
     color: black;
     width: 100%;
@@ -15,10 +14,8 @@ header {
     font-size: 24px;
 }
 
-.menu > ul > li {
-    padding-top: 6px;
-    padding-left: 3px;
-    padding-right: 3px;
+.menu .is-submenu-item{
+    font-size: 16px;
 }
 
 .menu > ul > li > a {
@@ -27,20 +24,16 @@ header {
     transition: all 1.5s ease;
 }
 
-.menu a:hover {
+.menu .is-submenu-item a {
+    width:100%;
+    text-align: center;
+}
+
+header .menu a:hover {
     color: #fff;
     background-color: #5db157;
     text-decoration: none;
     transition: all 1.5s ease;
-}
-.menu li.show a.nav-link.dropdown-toggle{
-    color: #fff;
-    background-color: #5db157;
-}
-
-.corps a {
-    color: #474747;
-    text-decoration: underline;
 }
 
 .corps {
@@ -48,31 +41,31 @@ header {
     color: #474747;
     padding: 70px 10px 30px 10px;
 }
-footer{
-    margin-top: 24px;
-    border-top:1px solid #f0f0f0;
+/**
+Footer
+*/
+
+.responsive-blog-footer {
+    background: #4a4a4a;
+    padding: 3rem 3rem;
+    color: white;
 }
-#bottom-footer {
-    font-size: 14px;
+  
+@media screen and (max-width: 39.9375em) {
+    .responsive-blog-footer h4 {
+      font-size: 1.5rem;
+    }
 }
-#bottom-footer a{
-    color:#474747;
-    font-size: 14px;
+  
+.responsive-blog-footer p {
+    color: #8a8a8a;
 }
 
-#bottom-footer .bottom-footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.responsive-blog-footer a {
+    font-size: 1.2rem;
+    color: #8a8a8a;
 }
-
-#bottom-footer .copyright {
-    text-align: left;
-}
-
-#bottom-footer .site-info {
-    text-align: right;
-}
+    
 
 table {
     margin-left: auto;
@@ -242,36 +235,6 @@ label {
 
 .experience-item:hover {
     background-color: rgba(180, 200, 180, 0.3);
-}
-.accordeon:focus {
-    outline: none;
-}
-.accordeon {
-    display: flex;
-    justify-content: space-between;
-    background-color: #5db157;
-    padding: 16px;
-    margin: 16px 0px;
-    color: #fff;
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-}
-
-.accordeon.active, .accordeon:hover {
-    background-color: #428017;
-}
-
-.accordeon-content {
-    padding: 0 12px;
-    height: 0;
-    transition: 0.8s;
-    overflow: hidden;
-}
-.accordeon.active + .accordeon-content {
-    height: 200px;
 }
 
 /* responsive design taille moyenne*/
