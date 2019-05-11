@@ -102,32 +102,14 @@ h2.parcours_titres {
     text-align: center;
 }
 
-.contact input[type="submit"] {
-    padding: 5px;
-}
 
 form.contact, form.genformcontact {
-    width: 400px;
+    width: 40%;
     margin: auto;
-}
-
-form.contact input[type="text"], form.contact input[type="email"], form.contact textarea {
-    width: 80%;
 }
 
 form.genformcontact input[type="text"], form.genformcontact input[type="email"], form.genformcontact textarea {
     width: 60%;
-}
-
-input[type="text"], input[type="email"], textarea {
-    padding: 12px;
-    margin: 0px;
-    outline: none;
-    border-top: 1px white solid;
-    border-right: 1px white solid;
-    border-bottom: none;
-    border-left: 1px white solid;
-    background-color: #F0F0F0;
 }
 
 input[type="number"] {
@@ -137,22 +119,9 @@ input[type="number"] {
 }
 
 form.contact textarea {
-    width: 80%;
     min-height: 60px;
     max-height: 300px;
     resize: vertical;
-    border: 1px white solid;
-}
-
-input[type="submit"] {
-    outline: none;
-    border-radius: 8px;
-}
-
-input[type="submit"]:hover {
-    color: white;
-    border: 1px white solid;
-    background-color: #0069d9;
 }
 
 .startgame, .stopgame {
